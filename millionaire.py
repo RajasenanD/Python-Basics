@@ -35,4 +35,13 @@ for question in questions:
  
     print(f'You won {prizes[i]} rupees !!\n')
     i+=1
+'''
+millionaire is a game , asking question and take answer as input, if the answer is correct then it prints that answer is correct and also 
+prints the prize money for that answer, the prize money is increases for each question which are answered correctly.
 
+- Uses a nested list to frame questions and answer, inorder to select answer using index position, the answer is given in last index.
+- Uses for loop for iteratet list , and assign 'a' variable as input to get answer if it equals to last index of each list then
+the answer is correct otherwise it prints the correct answer and breaks the loop.
+- And also for each answer the prize money increases, by assinging prizes in a list to fetch using index , by assigning i =0 then 
+using increment operator to increase the index for each correct answer.
+'''
