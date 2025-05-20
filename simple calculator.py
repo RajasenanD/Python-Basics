@@ -8,13 +8,16 @@ while True:
     else:
         break
 
-    
+while True:
+    try:
+        a = int(input('Enter first number: '))
+        b = int(input('Enter second number: '))
+    except ValueError as e:
+        print('Give number as input:...',e)
+        continue
+    else:
+        break
 
-try:
-    a = int(input('Enter first number: '))
-    b = int(input('Enter second number: '))
-except ValueError as e:
-    print('Give number as input:...',e)
 def calc(a,b):
     if operation == 'add':
         return a+b
@@ -22,11 +25,9 @@ def calc(a,b):
         return a-b
     elif operation == 'mul':
         return a*b
-    elif operation == 'div':
-        return a/b
     else:
-        print('Enter the displayed operation: error occured')
-
+        return a/b
+    
 
 result = calc(a,b)
 print(result)
